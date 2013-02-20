@@ -37,7 +37,8 @@ class AppController extends Controller {
 		'Session', 
 		'Auth' =>array(
 			'loginRedirect'=>array('controller'=>'quotes','action'=>'index'),
-			'logoutRedirect'=>array('controller'=>'quotes','action'=>'index')
+			'logoutRedirect'=>array('controller'=>'quotes','action'=>'index'),
+			'authorize'=>array('Controller')
 			
 		)
 	);
@@ -57,6 +58,13 @@ class AppController extends Controller {
 		}
 		
 	}
+public function isAuthorized($user){
 	
+	if(isset($user['group_id']) && $user['group_id']==1){
+		return true;
+	}
+	return false;
+	
+}	
 	
 }
