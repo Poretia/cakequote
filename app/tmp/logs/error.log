@@ -1,0 +1,62 @@
+2013-02-20 16:36:50 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /cakequote/users/login
+Stack Trace:
+#0 /Users/sarahad/web/cakequote/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/sarahad/web/cakequote/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/sarahad/web/cakequote/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-20 16:44:27 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /cakequote/users/login
+Stack Trace:
+#0 /Users/sarahad/web/cakequote/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/sarahad/web/cakequote/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/sarahad/web/cakequote/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-20 17:06:25 Error: Fatal Error (4): syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in [/Users/sarahad/web/cakequote/app/Controller/AppController.php, line 56]
+2013-02-20 17:06:25 Error: [FatalErrorException] syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+Request URL: /cakequote/users
+Stack Trace:
+#0 /Users/sarahad/web/cakequote/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/sarahad/...', 56)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/sarahad/...', 56, Array)
+#2 /Users/sarahad/web/cakequote/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/sarahad/...', 56, Array)
+#3 /Users/sarahad/web/cakequote/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 17:18:59 Error: Fatal Error (4): syntax error, unexpected 'else' (T_ELSE) in [/Users/sarahad/web/cakequote/app/View/Layouts/default.ctp, line 47]
+2013-02-20 17:18:59 Error: [FatalErrorException] syntax error, unexpected 'else' (T_ELSE)
+Request URL: /cakequote/users/login
+Stack Trace:
+#0 /Users/sarahad/web/cakequote/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/sarahad/...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/sarahad/...', 47, Array)
+#2 /Users/sarahad/web/cakequote/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/sarahad/...', 47, Array)
+#3 /Users/sarahad/web/cakequote/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 17:19:25 Error: Fatal Error (4): syntax error, unexpected 'else' (T_ELSE) in [/Users/sarahad/web/cakequote/app/View/Layouts/default.ctp, line 47]
+2013-02-20 17:19:25 Error: [FatalErrorException] syntax error, unexpected 'else' (T_ELSE)
+Request URL: /cakequote/users/login
+Stack Trace:
+#0 /Users/sarahad/web/cakequote/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/sarahad/...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/sarahad/...', 47, Array)
+#2 /Users/sarahad/web/cakequote/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/sarahad/...', 47, Array)
+#3 /Users/sarahad/web/cakequote/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 17:19:47 Error: Fatal Error (1): Call to a member function link() on a non-object in [/Users/sarahad/web/cakequote/app/View/Layouts/default.ctp, line 46]
+2013-02-20 17:19:47 Error: [FatalErrorException] Call to a member function link() on a non-object
+Request URL: /cakequote/
+Stack Trace:
+#0 /Users/sarahad/web/cakequote/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/sarahad/...', 46)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/sarahad/...', 46, Array)
+#2 /Users/sarahad/web/cakequote/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/sarahad/...', 46, Array)
+#3 /Users/sarahad/web/cakequote/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
