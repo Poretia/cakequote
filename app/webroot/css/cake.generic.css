@@ -122,7 +122,7 @@ margin-top:-25px;
 	margin-top:-26px;	
 }
 #content .submit{
-	margin-left:500px;
+	margin-left:50px;
 }
 #header h6 a{
 color:#723D21;
@@ -136,7 +136,7 @@ border-radius:2px;
 	background:yellow;
 }
 #content{
-		background:#EEEDE8;
+	background:#EEEDE8 url('../img/luui.png')no-repeat;
 	clear: both;
 	color: #333;
 	padding: 10px 20px 40px 20px;
@@ -165,6 +165,7 @@ div.view {
 div.actions {
 	float:left;
 	width:18%;
+
 
 	
 
@@ -208,6 +209,7 @@ table tr td {
 	text-align: left;
 	vertical-align: top;
 	border-bottom:1px solid #ddd;
+	background:#F9F9F9;
 }
 table tr:nth-child(even) {
 	background: #f9f9f9;
@@ -219,6 +221,7 @@ td.actions {
 table td.actions a {
 	margin: 0px 6px;
 	padding:2px 5px;
+	background:#F9F9F9;
 }
 
 /* SQL log */
