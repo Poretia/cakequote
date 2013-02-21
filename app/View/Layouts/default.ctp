@@ -38,16 +38,20 @@
 	<div id="container">
 		<div id="header">
 			<h1><?php echo $this->Html->link('cakequote', '/'); ?></h1>
+			<h6>
+				<?php echo $me ['username']; ?>
+				<?php if($me['id']>0): ?>
+>>>					<div><?php echo $this->Html->link('Déconnexion','/users/logout') ?></div>
+	<div id="quotes"><?php echo $this->Html->link('Quotes','/quotes/add') ?></div>
+		<div id="users"><?php echo $this->Html->link('Users','/users') ?></div>
+				<?php else: ?>
+					<div><?php echo $this->Html->link('Connexion','/users/login') ?></div>
+						<div id="inscription"><?php echo $this->Html->link('Inscription','/users/add') ?></div>
+				<?php endif; ?>
+			</h6>
 		</div>
 		<div id="content">
-<h2>
-	<?php echo $me ['username']; ?>
-	<?php if($me['id']>0): ?>
-		<div><?php echo $this->Html->link('logout','/users/logout') ?></div>
-	<?php else: ?>
-		<div><?php echo $this->Html->link('login','/users/login') ?></div>
-	<?php endif; ?>
-</h2>
+
 			<?php echo $this->Session->flash(); ?>
 
 			<?php echo $this->fetch('content'); ?>

@@ -46,8 +46,9 @@ public function login() {
     } 
 }
 
+
 	public function logout(){
-	 	$this->Session->setFlash('Bye bye');
+	 	$this->Session->setFlash('Ciao');
 		$this->redirect($this->Auth->logout());
 	}
 

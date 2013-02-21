@@ -54,7 +54,7 @@ class AppController extends Controller {
 			$this->set('me',$this->Auth->user());
 		}
 		else{
-			$this->set('me',array('id'=>0,'username'=>'not connected'));
+			$this->set('me',array('id'=>0,'username'=>''));
 		}
 		
 	}

@@ -17,13 +17,14 @@
  */
 
 * {
+
 	margin:0;
 	padding:0;
 }
 
 /** General Style Info **/
 body {
-	background: #003d4c;
+	background:#723D21;
 	color: #fff;
 	font-family:'lucida grande',verdana,helvetica,arial,sans-serif;
 	font-size:90%;
@@ -46,23 +47,22 @@ h1, h2, h3, h4 {
 	margin-bottom:0.5em;
 }
 h1 {
-	background:#fff;
-	color: #003d4c;
+	color:blue;
 	font-size: 100%;
 }
 h2 {
-	background:#fff;
-	color: #e32;
+
+	color:#723D21;
 	font-family:'Gill Sans','lucida grande', helvetica, arial, sans-serif;
 	font-size: 190%;
 }
 h3 {
-	color: #2c6877;
+	color:red;
 	font-family:'Gill Sans','lucida grande', helvetica, arial, sans-serif;
 	font-size: 165%;
 }
 h4 {
-	color: #993;
+	color:yellow;
 	font-weight: normal;
 }
 ul, li {
@@ -82,31 +82,69 @@ p {
 }
 #header h1 {
 	line-height:20px;
-	background: #003d4c url('../img/cake.icon.png') no-repeat left;
-	color: #fff;
-	padding: 0px 30px;
+
+	color:#EEEDE8;
+	padding: 0px 650px;
 }
 #header h1 a {
-	color: #fff;
-	background: #003d4c;
+	color:#EEEDE8;
+	
 	font-weight: normal;
 	text-decoration: none;
 }
 #header h1 a:hover {
 	color: #fff;
-	background: #003d4c;
 	text-decoration: underline;
 }
 #header.admin,#header.admin h1, #header.admin h1 a{
 	background-color:#a00;
 }
+
+#header h6{
+	margin-top:-25px;
+	margin-left:1270px;
+	font-size:18px;
+	
+}
+#header #inscription{
+margin-left:-1280px;
+margin-top:-25px;
+	
+}
+
+#header #quotes{
+	margin-left:-1280px;
+	margin-top:-25px;	
+}
+
+#header #users{
+	margin-left:-1180px;
+	margin-top:-26px;	
+}
+#content .submit{
+	margin-left:500px;
+}
+#header h6 a{
+color:#723D21;
+font-size:22px;
+background:#EEEDE8;
+border-radius:2px;
+
+
+}
+#content #flashMessage .message{
+	background:yellow;
+}
 #content{
-	background: #fff;
+		background:#EEEDE8;
 	clear: both;
 	color: #333;
 	padding: 10px 20px 40px 20px;
 	overflow: auto;
+
 }
+
+
 #footer {
 	clear: both;
 	padding: 6px 10px;
@@ -121,15 +159,22 @@ div.view {
 	width:76%;
 	border-left:1px solid #666;
 	padding:10px 2%;
+
+
 }
 div.actions {
 	float:left;
-	width:16%;
-	padding:10px 1.5%;
+	width:18%;
+
+	
+
 }
 div.actions h3 {
 	padding-top:0;
-	color:#777;
+	color:#723D21;
+
+	margin-left:90px;
+	
 }
 
 
@@ -443,16 +488,17 @@ p.error,
 .error-message {
 	clear: both;
 	color: #fff;
-	background: #c43c35;
+	background:#723D21;
 	border: 1px solid rgba(0, 0, 0, 0.5);
 	background-repeat: repeat-x;
-	background-image: -moz-linear-gradient(top, #ee5f5b, #c43c35);
-	background-image: -ms-linear-gradient(top, #ee5f5b, #c43c35);
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#ee5f5b), to(#c43c35));
-	background-image: -webkit-linear-gradient(top, #ee5f5b, #c43c35);
-	background-image: -o-linear-gradient(top, #ee5f5b, #c43c35);
-	background-image: linear-gradient(top, #ee5f5b, #c43c35);
+	background-image: -moz-linear-gradient(top, #A87155, #723D21);
+	background-image: -ms-linear-gradient(top, #A87155, #723D21);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#A87155), to(#723D21));
+	background-image: -webkit-linear-gradient(top, #A87155, #723D21);
+	background-image: -o-linear-gradient(top, #A87155, #723D21);
+	background-image: linear-gradient(top, #A87155, #723D21);
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+	text-align:center;
 }
 .success {
 	clear: both;
