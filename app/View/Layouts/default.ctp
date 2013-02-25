@@ -42,9 +42,10 @@
 				<?php echo $me ['username']; ?>
 				<?php if($me['id']>0): ?>
 >>>					<div><?php echo $this->Html->link('Déconnexion','/users/logout') ?></div>
-	<div id="quotes"><?php echo $this->Html->link('Quotes','/quotes/add') ?></div>
-		<div id="users"><?php echo $this->Html->link('Users','/users') ?></div>
-				<?php else: ?>
+					<div id="quotes"><?php echo $this->Html->link('Quotes','/quotes/add') ?></div>
+					<div id="users"><?php echo $this->Html->link('Users','/users') ?></div>
+						<div id="groups"><?php echo $this->Html->link('Groups','/groups') ?></div>
+> 				<?php else: ?>
 					<div><?php echo $this->Html->link('Connexion','/users/login') ?></div>
 						<div id="inscription"><?php echo $this->Html->link('Inscription','/users/add') ?></div>
 				<?php endif; ?>

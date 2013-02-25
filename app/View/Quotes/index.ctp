@@ -21,9 +21,12 @@
 		<td><?php echo h($quote['Quote']['created']); ?>&nbsp;</td>
 		<td><?php echo h($quote['Quote']['updated']); ?>&nbsp;</td>
 		<td class="actions">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $quote['Quote']['id'])); ?>
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $quote['Quote']['id'])); ?>
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $quote['Quote']['id']), null, __('Are you sure you want to delete # %s?', $quote['Quote']['id'])); ?>
+		
+			<?php 	echo $this->Html->link(__('View'), array('action' => 'view', $quote['Quote']['id'])); ?>
+			<?php if($me['id']>0){
+				if ($quote['User']['id']==$me['id'] || $me['Group']['id']==1 || $me['Group']['id']==2 ){	 echo $this->Html->link(__('Edit'), array('action' => 'edit', $quote['Quote']['id']));
+		 echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $quote['Quote']['id']), null, __('Are you sure you want to delete # %s?', $quote['Quote']['id']));
+	}	} ?>
 		</td>
 	</tr>
 <?php endforeach; ?>
@@ -43,10 +46,6 @@
 	</div>
 </div>
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-		<li><?php echo $this->Html->link(__('New Quote'), array('action' => 'add')); ?></li>
-		<li><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?> </li>
-	</ul>
+
+
 </div>
